@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegister.NovaSenhaActivity">
+
+    <View
+        android:id="@+id/lay_sup"
+        android:layout_width="416dp"
+        android:layout_height="550dp"
+        android:background="@drawable/backgroundcomponents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="LOGO"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_definirNovaSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Definir Nova Senha"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lay_sup" />
+
+    <EditText
+        android:id="@+id/edt_novaSenha"
+        android:layout_width="364dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:inputType="text"
+        android:hint="Nova Senha"
+        android:paddingStart="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txt_definirNovaSenha"
+        android:layout_marginTop="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <EditText
+        android:id="@+id/edt_SenhaLogin"
+        android:layout_width="364dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="28dp"
+        android:inputType="text"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:hint="Confimar Nova Senha"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edt_novaSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <Button
+        android:id="@+id/btn_criarNovaSenha"
+        android:layout_width="364dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Criar Nova Senha"
+        android:textSize="17dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_SenhaLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

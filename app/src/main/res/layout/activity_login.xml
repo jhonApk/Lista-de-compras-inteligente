@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegister.LoginActivity">
+
+
+    <View
+        android:id="@+id/lay_sup"
+        android:layout_width="416dp"
+        android:layout_height="550dp"
+        android:background="@drawable/backgroundcomponents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lay_sup" />
+
+    <EditText
+        android:id="@+id/edt_loginUser"
+        android:layout_width="364dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:inputType="text"
+        android:hint="User/ E-mail"
+        android:paddingStart="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txt_login"
+        android:layout_marginTop="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <EditText
+        android:id="@+id/edt_SenhaLogin"
+        android:layout_width="364dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="28dp"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        android:autofillHints="password"
+        android:paddingStart="16dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edt_loginUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="364dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Login"
+        android:textSize="17dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_SenhaLogin" />
+
+    <TextView
+        android:id="@+id/txt_esqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equeceu a senha?"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        android:textColor="#81FFFFFF"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_newConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Não possui Conta?"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/txt_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="8dp"
+        android:text="Registre-se!"
+        android:textColor="#63FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/txt_newConta"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

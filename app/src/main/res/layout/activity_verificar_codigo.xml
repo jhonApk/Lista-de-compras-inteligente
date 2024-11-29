@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegister.VerificarCodigoActivity">
+
+
+    <View
+        android:id="@+id/lay_sup"
+        android:layout_width="416dp"
+        android:layout_height="550dp"
+        android:background="@drawable/backgroundcomponents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="LOGO"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_verificaCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verifica Código"
+        android:layout_marginTop="79dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lay_sup" />
+
+
+    <EditText
+        android:id="@+id/edt_pin1"
+        android:layout_width="56dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:inputType='numberSigned'
+        android:hint="0"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="33dp"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txt_verificaCodigo"
+        android:layout_marginTop="67dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <EditText
+        android:id="@+id/edt_pin2"
+        android:layout_width="56dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:inputType="textCapCharacters"
+        android:hint="0"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txt_verificaCodigo"
+        android:layout_marginTop="67dp"
+        app:layout_constraintStart_toEndOf="@+id/edt_pin1"
+         />
+
+    <EditText
+        android:id="@+id/edt_pin3"
+        android:layout_width="56dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:inputType="textCapCharacters"
+        android:hint="0"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txt_verificaCodigo"
+        android:layout_marginTop="67dp"
+        app:layout_constraintStart_toEndOf="@+id/edt_pin2"/>
+
+    <EditText
+        android:id="@+id/edt_pin4"
+        android:layout_width="56dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:inputType="textCapCharacters"
+        android:hint="0"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txt_verificaCodigo"
+        android:layout_marginTop="67dp"
+        app:layout_constraintStart_toEndOf="@+id/edt_pin3" />
+
+
+    <EditText
+        android:id="@+id/edt_pin5"
+        android:layout_width="56dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:inputType="textCapCharacters"
+        android:hint="0"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txt_verificaCodigo"
+        android:layout_marginTop="67dp"
+        app:layout_constraintStart_toEndOf="@+id/edt_pin4" />
+
+
+    <Button
+        android:id="@+id/btn_confirmarCodigo"
+        android:layout_width="344dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Confirmar Código"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pin1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

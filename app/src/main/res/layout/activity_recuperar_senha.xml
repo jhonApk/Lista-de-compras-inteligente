@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegister.RecuperarSenhaActivity">
+
+
+    <View
+        android:id="@+id/lay_sup"
+        android:layout_width="416dp"
+        android:layout_height="550dp"
+        android:background="@drawable/backgroundcomponents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="LOGO"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_RecuperarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar Senha"
+        android:layout_marginTop="79dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lay_sup" />
+
+    <EditText
+        android:id="@+id/edt_recuperarSenha"
+        android:layout_width="344dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:inputType="text"
+        android:hint="E-mail"
+        android:fontFamily="sans-serif-condensed-light"
+        android:paddingStart="16dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/txt_RecuperarSenha"
+        android:layout_marginTop="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="460dp" />
+
+
+
+    <Button
+        android:id="@+id/btn_redefinirSenha"
+        android:layout_width="344dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:text="Redefinir Senha"
+        android:textSize="17dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_recuperarSenha" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

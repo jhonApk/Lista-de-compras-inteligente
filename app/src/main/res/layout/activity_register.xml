@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegister.RegisterActivity">
+
+
+
+    <View
+        android:id="@+id/lay_sup"
+        android:layout_width="416dp"
+        android:layout_height="650dp"
+        android:background="@drawable/backgroundcomponents"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_Registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="Resgistro"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_FirstName"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Nome"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:layout_marginTop="46dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lay_sup" />
+
+    <EditText
+        android:id="@+id/edt_Sobrenome"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="28dp"
+        android:inputType="text"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:hint="Sobrenome"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edt_FirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <EditText
+        android:id="@+id/edt_EmailRegister"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="28dp"
+        android:inputType="text"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:hint="E-mail"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edt_Sobrenome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <EditText
+        android:id="@+id/edt_PasswordRegister"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:background="@drawable/edit_text"
+        android:textColor="@color/white"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-light"
+        android:inputType="text"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edt_EmailRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="326dp" />
+
+
+
+    <EditText
+        android:id="@+id/edt_ConfirmPasswordRegister"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:background="@drawable/edit_text"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_marginTop="28dp"
+        android:inputType="text"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:hint="Confim Password"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edt_PasswordRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <Button
+        android:id="@+id/btn_Registro"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="65dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Criar Conta"
+        android:textSize="17dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_ConfirmPasswordRegister" />
+
+    <TextView
+        android:id="@+id/txt_newConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Já possui Conta?"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_marginStart="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Registro" />
+
+    <TextView
+        android:id="@+id/txt_LoginRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:text="Login!"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@id/txt_newConta"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Registro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
